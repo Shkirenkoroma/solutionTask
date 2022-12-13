@@ -1,0 +1,35 @@
+@import "../../../../variables.less";
+
+.input {
+	margin: 0 3px;
+	border-radius: 10px;
+	height: 25px;
+	outline: none;
+	&::placeholder {
+		.theme();
+		opacity: 0.7;
+	}
+	&.error_name_field {
+		border: 2px solid red;
+	}
+	&.error_status_field {
+		border: 2px solid red;
+	}
+}
+
+.button {
+	.buttonsTheme();
+}
+.button_clickName {
+	.theme();
+}
+
+.errorMessageName {
+	.errorMessageTheme();
+	margin-left: 50px;
+}
+
+.errorMessageStatus {
+	.errorMessageTheme();
+	margin-left: 225px;
+}
